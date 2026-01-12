@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #0d061e;
+  /* slight blue tone added as blue tone signifies trust and nitc should be the symbol of trust for students */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* UTILITIES */
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  /* links will inherit this property and since the text decoration is set to none so no underline  */
+  text-decoration: none;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  /* only one issue tht backdrop filter uses lot of GPU */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+}
+
+/* TOP BAR */
+.top-bar {
+  font-size: 0.85rem;
+}
+.top-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+}
+.govt {
+  opacity: 0.8;
+}
+.top-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin: 0.5rem;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.logo img {
+  height: 48px;
+}
+.logo-text span {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+/* EVENTS STRIP (HORIZONTAL SCROLL) */
+.events-strip {
+  margin: 2rem 0 1rem;
+  padding-left: 5%;
+}
+
+.events-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.events-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  background: rgba(12, 12, 13, 0.25);
+  border-radius: 10px;
+}
+
+.event-card {
+  min-width: 750px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  position: relative;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.04);
+}
+
+/* EVENT OVERLAY */
+.event-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  padding: 1rem;
+}
+
+.event-overlay h4 {
+  font-size: 1.1rem;
+}
+
+.event-overlay span {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .event-card {
+    min-width: 260px;
+    height: 170px;
+  }
+}
+
+/* NAV */
+.main-nav {
+  display: flex;
+  gap: 1.4rem;
+}
+.main-nav a:hover {
+  color: #fbbf24;
+}
+
+/* HERO */
+.hero {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #000000, #010f2e);
+}
+.hero-box {
+  padding: 3rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.8rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.stat h2 {
+  color: #fbbf24;
+}
+/* CAMPUS SHOWCASE */
+.campus-section {
+  margin: 5rem 0;
+}
+
+/* PARALLAX IMAGE */
+.campus-image {
+  position: relative;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+/* PARALLAX EFFECT */
+.parallax {
+  background-attachment: fixed;
+}
+
+/* OVERLAY */
+.campus-overlay {
+  max-width: 420px;
+  padding: 2rem;
+}
+
+.campus-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.campus-overlay p {
+  opacity: 0.9;
+}
+
+/* MOBILE FIX (PARALLAX DISABLED) */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  .campus-image {
+    height: 60vh;
+    padding: 1.5rem;
+  }
+}
+
+
+/* QUICK ACCESS */
+.quick-access {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin: 4rem auto;
+}
+.card {
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* SECTIONS */
+.section {
+  margin: 4rem auto;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.info-card {
+  padding: 2rem;
+}
+
+/* NEWS */
+.news h2 {
+  margin-bottom: 1.5rem;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.news-card {
+  padding: 1.5rem;
+}
+.tag {
+  font-size: 0.75rem;
+  color: #fbbf24;
+}
+
+/* FOOTER */
+.footer {
+  margin: 4rem 1rem 1rem;
+  padding: 3rem 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.footer a {
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+.footer a:hover {
+  opacity: 1;
+}
+.footer-bottom {
+  margin-top: 2.5rem;
+  border-top: 1px solid #1e293b;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}

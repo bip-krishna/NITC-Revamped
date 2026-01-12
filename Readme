@@ -1,0 +1,167 @@
+# NIT Calicut Website Revamp
+
+
+
+
+
+
+
+**ACTUAL SITE** nitc.ac.in
+##coudnt upload screenshots as repos max size of 25 mb reached or ig so as some errors are coming multiple times 
+
+
+
+
+
+
+
+## Overview
+
+
+
+---
+
+## Why a Revamp Is Necessary (Hard Truth)
+
+The current website suffers from **outdated design patterns, poor UX decisions, and weak information architecture**. These are not subjective opinions — they directly increase bounce rate, confusion, and mistrust.
+
+A premier technical institute **cannot afford a website that feels like a decade-old government portal**.
+
+---
+
+## Current Problems in the Existing Site
+
+### 1. Poor Information Architecture
+
+**Problem:**
+
+* Important content (Admissions, Academics, Placements, Departments) is buried inside deep menus
+* Users must click 3–5 times to reach basic information
+* No clear prioritization of what matters to different users
+
+**Impact:**
+
+* First-time visitors feel lost
+* Applicants struggle to find admission-related content
+* Recruiters waste time navigating cluttered pages
+
+**Reality Check:**
+If users need instructions to use your website, the design has already failed.
+
+---
+
+### 2. Outdated Visual Design
+
+**Problem:**
+
+* Inconsistent fonts, colors, and spacing
+* No modern layout system (cards, grids, sections)
+* Pages feel text-heavy and visually exhausting
+
+**Impact:**
+
+* Low credibility for an institute known for engineering excellence
+* Poor first impression for international visitors
+* Zero emotional connection with campus life
+
+
+
+---
+
+
+
+
+### 4. Navigation Is Overloaded
+
+**Problem:**
+
+* Too many links exposed at once
+* Dropdown menus are cluttered and confusing
+* No distinction between primary and secondary actions
+
+
+More links ≠ more usability.
+
+---
+
+### 5. No Clear Visual Hierarchy
+
+**Problem:**
+
+* Headings, subheadings, and body text look similar
+* Important announcements do not stand out
+* No scannability
+
+
+People scan websites. The current site forces them to read line-by-line.
+
+---
+
+
+* Heavy pages with unnecessary assets
+* No lazy loading of images
+* Inefficient structure
+
+**Impact:**
+
+* Slow load times on mobile data
+* Poor user retention
+
+**Truth:**
+A slow site feels broken, even if it technically works.
+
+---
+
+### 8. No Storytelling or Identity
+
+**Problem:**
+
+* Campus life, fests, research, and achievements are poorly showcased
+* No strong visual narrative
+
+**Impact:**
+
+* Missed opportunity to inspire applicants
+* Website feels like a notice board, not an institution
+
+**Observation:**
+Great institutes tell stories. This site just dumps information.
+
+---
+
+## Objectives of the Revamp
+
+* Simplify navigation
+* Establish clear visual hierarchy
+* Make the site mobile-first
+* Improve performance
+* Align design with a top-tier technical institute
+* Showcase campus culture, events, and achievements
+
+---
+
+## Design Principles for the Revamped Site
+
+* **Clarity over clutter**
+* **Content-first design**
+* **Mobile-first responsiveness**
+* **Accessibility by default**
+* **Modern, minimal UI**
+
+---
+
+## Target Users
+
+* Prospective students
+* Current students
+* Faculty & staff
+* Recruiters
+* Alumni
+* International visitors
+
+Each group must find what they need **within seconds**, not minutes.
+
+---
+
+
+**Maintained by:** Krishna Jha 
