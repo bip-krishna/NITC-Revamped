@@ -193,7 +193,7 @@ a {
 
 /* PARALLAX EFFECT */
 .parallax {
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 /* OVERLAY */
