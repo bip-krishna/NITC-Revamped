@@ -1,23 +1,21 @@
-# NITC-Revamped
+# NIT Calicut · Website Revamp
 
-A redesigned landing page for **National Institute of Technology Calicut**. Features a modern glassmorphism aesthetic with utility bar, navigation, event highlights, campus imagery, and GitHub Actions deployment to GitHub Pages.
+A static redesign concept for the NIT Calicut homepage. The prototype pairs a utility bar and main navigation with campus photography and an events section.
 
-## Tech Stack
+[Quick start](#quick-start) · [Design rationale](Readme) · [Pages workflow](.github/workflows/static.yml)
 
-- Vanilla HTML5 / CSS3
-- Glassmorphism design system
-- Responsive layout
-- GitHub Actions (`static.yml`) for automated deployment
+## Quick start
 
-## Local Development
+Run this from the repository root with Python 3 installed.
 
 ```bash
-git clone https://github.com/bip-krishna/NITC-Revamped.git
-cd NITC-Revamped
-# Serve locally
 python3 -m http.server 8000
 ```
 
-## Deployment
+Open [localhost:8000](http://localhost:8000).
 
-Any push to `main` triggers the GitHub Actions workflow which deploys to GitHub Pages.
+## Project layout
+
+- [`index.html`](index.html) contains the navigation, event highlights, and campus sections.
+- [`styles.css`](styles.css) defines the layout and responsive styling.
+- [`static.yml`](.github/workflows/static.yml) deploys the site to GitHub Pages on pushes to `main`.
